@@ -1,0 +1,464 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>POSCO FUTURE M - ?먯씤 諛??곴?愿怨?遺꾩꽍</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "on-error-container": "#93000a",
+                        "outline": "#737782",
+                        "error": "#ba1a1a",
+                        "inverse-on-surface": "#f0f0f7",
+                        "status-critical": "#DC2626",
+                        "surface-container-low": "#f3f3fa",
+                        "background": "#f9f9ff",
+                        "on-secondary-fixed": "#141d23",
+                        "surface-container-highest": "#e2e2e8",
+                        "primary-fixed": "#d6e3ff",
+                        "secondary-fixed-dim": "#bfc8d0",
+                        "on-surface": "#1a1c20",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed": "#ffdbcb",
+                        "inverse-surface": "#2e3035",
+                        "primary": "#002b5c",
+                        "secondary": "#575f67",
+                        "surface-container": "#ededf4",
+                        "surface-variant": "#e2e2e8",
+                        "success-green": "#10B981",
+                        "status-normal": "#007BFF",
+                        "on-primary": "#ffffff",
+                        "status-caution": "#F59E0B",
+                        "surface-dim": "#d9d9e0",
+                        "secondary-fixed": "#dbe4ed",
+                        "on-secondary-container": "#5b646b",
+                        "on-tertiary-fixed": "#341100",
+                        "on-primary-fixed-variant": "#0b468a",
+                        "on-surface-variant": "#434751",
+                        "on-primary-container": "#85affa",
+                        "primary-container": "#004185",
+                        "surface": "#f9f9ff",
+                        "outline-variant": "#c3c6d2",
+                        "error-container": "#ffdad6",
+                        "on-tertiary": "#ffffff",
+                        "tertiary": "#4f1d00",
+                        "primary-fixed-dim": "#aac7ff",
+                        "on-background": "#1a1c20",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed-variant": "#783103",
+                        "surface-bright": "#f9f9ff",
+                        "on-primary-fixed": "#001b3e",
+                        "surface-tint": "#2f5ea3",
+                        "tertiary-container": "#722d00",
+                        "inverse-primary": "#aac7ff",
+                        "on-tertiary-container": "#f99562",
+                        "surface-container-high": "#e8e8ee",
+                        "steel-silver": "#E9ECEF",
+                        "on-secondary-fixed-variant": "#3f484f",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#ffb692",
+                        "secondary-container": "#d8e1ea"
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.125rem",
+                        lg: "0.25rem",
+                        xl: "0.5rem",
+                        full: "0.75rem"
+                    },
+                    spacing: {
+                        margin: "24px",
+                        gutter: "16px",
+                        base: "4px",
+                        "table-cell-padding": "8px 12px",
+                        "card-padding": "20px"
+                    },
+                    fontFamily: {
+                        "data-mono": ["JetBrains Mono"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"]
+                    },
+                    fontSize: {
+                        "data-mono": ["13px", { lineHeight: "18px", fontWeight: "400" }],
+                        "headline-md": ["24px", { lineHeight: "32px", fontWeight: "600" }],
+                        "headline-sm": ["20px", { lineHeight: "28px", fontWeight: "600" }],
+                        "headline-lg-mobile": ["24px", { lineHeight: "32px", fontWeight: "700" }],
+                        "body-lg": ["16px", { lineHeight: "24px", fontWeight: "400" }],
+                        "label-bold": ["12px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "600" }],
+                        "display-lg": ["32px", { lineHeight: "40px", fontWeight: "700" }],
+                        "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background min-h-screen overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="bg-surface-container-lowest dark:bg-inverse-surface text-primary dark:text-primary-fixed fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows flex justify-between items-center h-16 px-margin w-full">
+<div class="flex items-center gap-4">
+<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary-fixed-dim">POSCO FUTURE M</span>
+</div>
+<div class="flex items-center gap-4">
+<!-- Search Bar on left -->
+<div class="relative hidden md:flex items-center">
+<span class="material-symbols-outlined absolute left-3 text-secondary">search</span>
+<input class="pl-10 pr-4 py-2 bg-surface-container-low border border-outline-variant rounded-full text-body-md focus:outline-none focus:border-primary w-64 text-on-surface" placeholder="寃??.." type="text">
+</div>
+<button class="text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-secondary-fixed-variant transition-colors cursor-pointer p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-secondary-fixed-variant transition-colors cursor-pointer p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">settings</span>
+</button>
+<button class="text-secondary dark:text-secondary-fixed-dim hover:bg-surface-container-low dark:hover:bg-on-secondary-fixed-variant transition-colors cursor-pointer p-2 rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined">help</span>
+</button>
+<div class="w-8 h-8 rounded-full overflow-hidden border border-outline-variant ml-2">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="A professional corporate headshot of an engineer in a clean, high-tech manufacturing environment. Soft, diffused lighting highlights sharp features. The color palette is composed of crisp whites, subtle grays, and deep navy blues, aligning perfectly with a modern, enterprise-grade industrial aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqhFiuCXj8z6kshniR7ltcea7pKhrYMQA-PiB-XwCCh05kH8zPyYelwXNYIBslQAiL0nBIqGUOynbYLqXDOsHzobVt5XhUweni4rG4x_J8AFX-O6bMUEJxGDvu3TcikUi4VZboisX4gldDaOFWFwT3IrCinvcJntt0EKggt9ts1FJSd8S3b2s2F4DtTl8ZaMd36gJq7LCqSqmyVKtq9KTLzc0IWCqu6U15OuWH0w1OxvynoyJ8itpR">
+</div>
+</div>
+</nav>
+<!-- SideNavBar -->
+<aside class="bg-surface dark:bg-on-background text-primary dark:text-primary-fixed fixed left-0 top-16 h-[calc(100vh-64px)] w-64 border-r border-outline-variant dark:border-outline flat no shadows flex flex-col py-gutter h-full z-40 hidden md:flex">
+<div class="px-margin mb-8 mt-4">
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">?덉쭏 遺꾩꽍</h2>
+<div class="flex items-center gap-2 mt-2">
+<div class="w-2 h-2 rounded-full bg-success-green"></div>
+<span class="font-body-md text-body-md text-secondary">?쒖뒪???뺤긽</span>
+</div>
+</div>
+<nav class="flex-1 flex flex-col gap-1 px-4">
+<a class="text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-secondary-container transition-all cursor-pointer duration-200 flex items-center gap-3 px-4 py-3 rounded-lg font-label-bold text-label-bold" href="/1/code.html">
+<span class="material-symbols-outlined">database</span>
+                ?곗씠???좏깮
+            </a>
+<a class="text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-secondary-container transition-all cursor-pointer duration-200 flex items-center gap-3 px-4 py-3 rounded-lg font-label-bold text-label-bold" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                ??쒕낫??            </a>
+<a class="bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary border-r-4 border-primary dark:border-inverse-primary cursor-pointer duration-200 flex items-center gap-3 px-4 py-3 rounded-lg font-label-bold text-label-bold" href="/3/code.html"><span class="material-symbols-outlined">analytics</span>
+                ?먯씤 諛??곴? 遺꾩꽍</a>
+
+<a class="text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-secondary-container transition-all cursor-pointer duration-200 flex items-center gap-3 px-4 py-3 rounded-lg font-label-bold text-label-bold" href="/4._8d/code.html">
+<span class="material-symbols-outlined">description</span>
+                蹂닿퀬??            </a>
+</nav>
+<div class="mt-auto px-4 pb-4">
+<button class="w-full bg-primary text-on-primary py-2 px-4 rounded font-label-bold text-label-bold flex items-center justify-center gap-2 hover:bg-primary-container hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-sm">download</span>
+                ?곗씠???대낫?닿린
+            </button>
+<div class="flex flex-col gap-1 mt-4">
+<a class="text-on-surface-variant hover:bg-surface-container-high px-4 py-2 rounded-lg flex items-center gap-3 font-body-md text-body-md transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">support_agent</span>
+                    吏??                </a>
+<a class="text-on-surface-variant hover:bg-surface-container-high px-4 py-2 rounded-lg flex items-center gap-3 font-body-md text-body-md transition-colors" href="#">
+<span class="material-symbols-outlined text-secondary">person</span>
+                    怨꾩젙
+                </a>
+</div>
+</div>
+</aside>
+<!-- NavigationDrawer (Right Sidebar) -->
+<aside class="bg-surface-container-low dark:bg-inverse-surface text-primary dark:text-primary-fixed fixed right-0 top-16 h-[calc(100vh-64px)] w-80 border-l border-outline-variant dark:border-outline shadow-sm dark:shadow-none transition-transform duration-300 ease-in-out flex flex-col p-card-padding h-full z-40 hidden xl:flex">
+<div class="mb-6 border-b border-outline-variant pb-4">
+<h2 class="font-headline-sm text-headline-sm text-primary font-bold">遺꾩꽍 ?쒖뼱</h2>
+<p class="font-body-md text-body-md text-secondary mt-1">遺꾩꽍 ?뚮씪誘명꽣</p>
+</div>
+<div class="flex-1 overflow-y-auto pr-2 custom-scrollbar space-y-6">
+<!-- Tabs -->
+<div class="flex border-b border-outline-variant">
+<button class="flex-1 py-2 text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary flex flex-col items-center gap-1 font-label-bold text-label-bold">
+<span class="material-symbols-outlined">filter_list</span>
+                    ?꾪꽣
+                </button>
+<button class="flex-1 py-2 text-secondary dark:text-secondary-fixed hover:bg-surface-container-highest dark:hover:bg-on-secondary-fixed-variant transition-colors flex flex-col items-center gap-1 font-label-bold text-label-bold">
+<span class="material-symbols-outlined">upload_file</span>
+                    ?낅줈??                </button>
+<button class="flex-1 py-2 text-secondary dark:text-secondary-fixed hover:bg-surface-container-highest dark:hover:bg-on-secondary-fixed-variant transition-colors flex flex-col items-center gap-1 font-label-bold text-label-bold">
+<span class="material-symbols-outlined">tune</span>
+                    ?ㅼ젙
+                </button>
+</div>
+<!-- Panel Content (Filters) -->
+<div class="space-y-5 mt-4">
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface">遺꾩꽍 湲곌컙</label>
+<div class="flex items-center gap-2">
+<input class="w-full bg-surface border border-outline-variant rounded px-2 py-1.5 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary" type="date" value="2023-10-01">
+<span class="text-secondary">-</span>
+<input class="w-full bg-surface border border-outline-variant rounded px-2 py-1.5 font-body-md text-body-md text-on-surface focus:outline-none focus:border-primary" type="date" value="2023-10-31">
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface">怨듭젙 議곌굔 (?뚯꽦 ?⑤룄)</label>
+<input class="w-full accent-primary" max="1000" min="800" type="range" value="920">
+<div class="flex justify-between text-secondary font-data-mono text-data-mono">
+<span class="">800째C</span>
+<span class="">1000째C</span>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-bold text-label-bold text-on-surface">遺덈웾 ?좏삎 ?좏깮</label>
+<div class="space-y-2">
+<label class="flex items-center gap-2 font-body-md text-body-md text-on-surface cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="">?낅룄 遺덇퇏??/span>
+</label>
+<label class="flex items-center gap-2 font-body-md text-body-md text-on-surface cursor-pointer">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="">湲덉냽 ?대Ъ</span>
+</label>
+<label class="flex items-center gap-2 font-body-md text-body-md text-on-surface cursor-pointer">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="">諛?????/span>
+</label>
+</div>
+</div>
+<div class="pt-4 border-t border-outline-variant">
+<button class="w-full bg-primary text-on-primary py-2 rounded font-label-bold text-label-bold hover:bg-primary-container transition-colors">
+                        遺꾩꽍 ?ㅽ뻾
+                    </button>
+<button class="w-full mt-2 bg-surface text-secondary border border-steel-silver py-2 rounded font-label-bold text-label-bold hover:bg-surface-container-low transition-colors">
+                        珥덇린??                    </button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Main Content Canvas -->
+<main class="pt-24 pb-12 px-margin md:ml-64 xl:mr-80 transition-all duration-300">
+<!-- Workflow Stepper -->
+<div class="flex items-center justify-between mb-8 bg-surface p-4 border border-outline-variant rounded-lg">
+<div class="flex items-center gap-2 flex-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center font-label-bold text-label-bold">1</div>
+<span class="font-label-bold text-label-bold text-secondary hidden sm:inline">?곗씠???좏깮</span>
+<div class="flex-1 h-px bg-outline-variant mx-2"></div>
+</div>
+<div class="flex items-center gap-2 flex-1">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center font-label-bold text-label-bold">2</div>
+<span class="font-label-bold text-label-bold text-secondary hidden sm:inline">??쒕낫??/span>
+<div class="flex-1 h-px bg-outline-variant mx-2"></div>
+</div>
+<div class="flex items-center gap-2 flex-1">
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center font-label-bold text-label-bold shadow-sm">3</div>
+<span class="font-label-bold text-label-bold text-primary font-bold hidden sm:inline">?먯씤 遺꾩꽍</span>
+<div class="flex-1 h-px bg-outline-variant mx-2"></div>
+</div>
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-secondary flex items-center justify-center font-label-bold text-label-bold">4</div>
+<span class="font-label-bold text-label-bold text-secondary hidden sm:inline">蹂닿퀬??/span>
+</div>
+</div>
+<!-- Header -->
+<div class="mb-6">
+<h1 class="font-display-lg text-display-lg text-on-surface">?먯씤 諛??곴?愿怨?遺꾩꽍</h1>
+<p class="font-body-lg text-body-lg text-secondary mt-2">LOT-A8923 遺덈웾瑜??곸듅 洹쇰낯 ?먯씤 ?꾩텧 諛?二쇱슂 ?뚮씪誘명꽣 ?곴? 遺꾩꽍</p>
+</div>
+<div class="flex flex-col lg:flex-row gap-6">
+<!-- Left Area: Details & 4M Cards -->
+<div class="flex-1 flex flex-col gap-6">
+<!-- LOT Details Card -->
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">info</span>
+                            濡쒗듃 ?곸꽭 ?뺣낫
+                        </h3>
+<span class="bg-error-container text-on-error-container px-2 py-1 rounded font-label-bold text-label-bold text-xs uppercase flex items-center gap-1">
+<div class="w-2 h-2 rounded-full bg-status-critical"></div>
+                            Critical
+                        </span>
+</div>
+<div class="grid grid-cols-2 gap-y-4 gap-x-8">
+<div>
+<span class="block text-secondary font-label-bold text-label-bold uppercase">LOT ID</span>
+<span class="block text-on-surface font-data-mono text-data-mono font-bold mt-1">LOT-A8923-2310</span>
+</div>
+<div>
+<span class="block text-secondary font-label-bold text-label-bold uppercase">?앹궛 ?쇱옄</span>
+<span class="block text-on-surface font-data-mono text-data-mono mt-1">2023.10.15 08:30:00</span>
+</div>
+<div>
+<span class="block text-secondary font-label-bold text-label-bold uppercase">?앹궛 ?쇱씤</span>
+<span class="block text-on-surface font-data-mono text-data-mono mt-1">?뚯꽦濡?#3</span>
+</div>
+<div>
+<span class="block text-secondary font-label-bold text-label-bold uppercase">二쇱슂 遺덈웾</span>
+<span class="block text-on-surface font-body-md text-body-md mt-1 font-bold text-error">?낅룄 遺덇퇏??(4.2%)</span>
+</div>
+</div>
+</div>
+<!-- 4M Root Cause Candidate Cards (Grid) -->
+<div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">psychology</span>
+                        4M 洹쇰낯 ?먯씤 ?꾨낫
+                    </h3>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<!-- Machine -->
+<div class="bg-surface border-2 border-primary rounded-lg p-4 cursor-pointer hover:shadow-md transition-shadow relative overflow-hidden">
+<div class="absolute top-0 right-0 bg-primary text-on-primary text-[10px] font-bold px-2 py-1 rounded-bl-lg z-10">AI 異붿쿇</div>
+<div class="flex items-start gap-3 relative z-20">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">precision_manufacturing</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-primary mb-1">MACHINE (?ㅻ퉬)</h4>
+<p class="font-body-md text-body-md text-on-surface font-bold">?뚯꽦濡??⑤룄 ?몄감 利앷?</p>
+<p class="font-body-sm text-xs text-secondary mt-1">Zone 2 ?덊꽣 ?⑥쑉 ???媛먯???</p>
+<div class="mt-3 flex items-center gap-1 font-data-mono text-xs text-error">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+                                        ?좊ː??92%
+                                    </div>
+</div>
+</div>
+</div>
+<!-- Material -->
+<div class="bg-surface border border-outline-variant rounded-lg p-4 hover:border-primary-fixed transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-surface-container-highest text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">category</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-secondary mb-1">MATERIAL (?먯옱)</h4>
+<p class="font-body-md text-body-md text-on-surface">?꾧뎄泥??낅룄 ?고룷</p>
+<p class="font-body-sm text-xs text-secondary mt-1">?낃퀬 濡쒗듃蹂??몄감 議댁옱.</p>
+<div class="mt-3 flex items-center gap-1 font-data-mono text-xs text-on-surface-variant">
+                                        ?좊ː??45%
+                                    </div>
+</div>
+</div>
+</div>
+<!-- Method -->
+<div class="bg-surface border border-outline-variant rounded-lg p-4 hover:border-primary-fixed transition-colors">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-surface-container-highest text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">rule</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-secondary mb-1">METHOD (?묒뾽諛⑸쾿)</h4>
+<p class="font-body-md text-body-md text-on-surface">?뱀삩 ?띾룄 ?ㅼ젙 ?ㅻ쪟</p>
+<p class="font-body-sm text-xs text-secondary mt-1">?쒖? ?덉떆??以???뺤씤??</p>
+<div class="mt-3 flex items-center gap-1 font-data-mono text-xs text-on-surface-variant">
+                                        ?좊ː??12%
+                                    </div>
+</div>
+</div>
+</div>
+<!-- Man -->
+<div class="bg-surface border border-outline-variant rounded-lg p-4 hover:border-primary-fixed transition-colors opacity-70">
+<div class="flex items-start gap-3">
+<div class="w-10 h-10 rounded bg-surface-container-highest text-secondary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined">engineering</span>
+</div>
+<div>
+<h4 class="font-label-bold text-label-bold text-secondary mb-1">MAN (?묒뾽??</h4>
+<p class="font-body-md text-body-md text-on-surface">援먮? ?쒓컙? ?덉쭏 蹂??/p>
+<p class="font-body-sm text-xs text-secondary mt-1">?뱀씠?ы빆 ?놁쓬.</p>
+<div class="mt-3 flex items-center gap-1 font-data-mono text-xs text-on-surface-variant">
+                                        ?좊ː??3%
+                                    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Area: Scatter Plot & Stats -->
+<div class="flex-1 flex flex-col gap-6">
+<!-- Scatter Plot Container -->
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding h-full flex flex-col">
+<div class="flex justify-between items-center mb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">怨듭젙 議곌굔 vs 遺덈웾瑜??곴?愿怨?/h3>
+<div class="flex gap-2">
+<button class="px-2 py-1 bg-surface-container-highest rounded text-xs font-label-bold text-label-bold border border-outline-variant">?⑤룄</button>
+<button class="px-2 py-1 bg-surface rounded text-xs font-label-bold text-label-bold text-secondary border border-outline-variant">媛?ㅼ쑀??/button>
+</div>
+</div>
+<!-- Chart Area (Placeholder with styling) -->
+<div class="flex-1 relative min-h-[250px] bg-surface-container-lowest border border-outline-variant rounded flex items-center justify-center p-4">
+<!-- Abstract Representation of a Scatter Plot using Tailwind utilities -->
+<div class="absolute bottom-4 left-4 right-4 h-px bg-outline-variant"></div> <!-- X axis -->
+<div class="absolute bottom-4 left-4 top-4 w-px bg-outline-variant"></div> <!-- Y axis -->
+<div class="absolute left-1 top-4 text-[10px] text-secondary font-data-mono">遺덈웾瑜?%)</div>
+<div class="absolute right-4 bottom-0 text-[10px] text-secondary font-data-mono">?뚯꽦 ?⑤룄(째C)</div>
+<!-- Simulated Data Points -->
+<div class="absolute w-2 h-2 rounded-full bg-status-normal opacity-70 bottom-[20%] left-[30%]"></div>
+<div class="absolute w-2 h-2 rounded-full bg-status-normal opacity-70 bottom-[25%] left-[35%]"></div>
+<div class="absolute w-2 h-2 rounded-full bg-status-normal opacity-70 bottom-[30%] left-[40%]"></div>
+<div class="absolute w-2 h-2 rounded-full bg-status-caution opacity-80 bottom-[45%] left-[55%]"></div>
+<div class="absolute w-2 h-2 rounded-full bg-status-caution opacity-80 bottom-[50%] left-[60%]"></div>
+<!-- High Defect Area -->
+<div class="absolute w-2.5 h-2.5 rounded-full bg-status-critical opacity-90 bottom-[70%] left-[75%] ring-2 ring-error-container"></div>
+<div class="absolute w-2.5 h-2.5 rounded-full bg-status-critical opacity-90 bottom-[80%] left-[82%]"></div>
+<div class="absolute w-2.5 h-2.5 rounded-full bg-status-critical opacity-90 bottom-[75%] left-[88%] ring-2 ring-error-container"></div>
+<div class="absolute w-2.5 h-2.5 rounded-full bg-status-critical opacity-90 bottom-[85%] left-[90%]"></div>
+<!-- Trend Line (Visual Fake) -->
+<div class="absolute h-0.5 bg-outline-variant opacity-50 w-3/4 bottom-[50%] left-[20%] rotate-[-25deg] transform origin-bottom-left"></div>
+<!-- Annotation -->
+<div class="absolute top-[10%] right-[10%] bg-surface border border-error p-2 rounded text-xs shadow-sm">
+<span class="block font-label-bold text-error mb-1">?댁긽 援ш컙 ?먯?</span>
+<span class="block font-data-mono text-[10px]">Temp &gt; 915째C</span>
+</div>
+</div>
+</div>
+<!-- Statistics Table -->
+<div class="bg-surface border border-outline-variant rounded-lg overflow-hidden">
+<table class="w-full text-left border-collapse">
+<thead class="bg-[#F1F3F5] text-on-surface font-label-bold text-label-bold uppercase text-xs border-b border-outline-variant">
+<tr>
+<th class="p-table-cell-padding">?뚮씪誘명꽣</th>
+<th class="p-table-cell-padding text-right">?곴?怨꾩닔(r)</th>
+<th class="p-table-cell-padding text-right">P-value</th>
+<th class="p-table-cell-padding text-center">?좎쓽??/th>
+</tr>
+</thead>
+<tbody class="font-data-mono text-data-mono text-on-surface">
+<tr class="border-b border-outline-variant hover:bg-surface-container-low bg-error-container bg-opacity-20">
+<td class="p-table-cell-padding font-bold text-error">?뚯꽦 ?⑤룄 (Zone 2)</td>
+<td class="p-table-cell-padding text-right">0.82</td>
+<td class="p-table-cell-padding text-right">&lt; 0.01</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center justify-center bg-status-critical text-on-error w-4 h-4 rounded-full font-bold text-[10px]">!</span>
+</td>
+</tr>
+<tr class="border-b border-outline-variant hover:bg-surface-container-low">
+<td class="p-table-cell-padding">媛???좊웾 (O2)</td>
+<td class="p-table-cell-padding text-right">0.31</td>
+<td class="p-table-cell-padding text-right">0.12</td>
+<td class="p-table-cell-padding text-center text-secondary">-</td>
+</tr>
+<tr class="hover:bg-surface-container-low">
+<td class="p-table-cell-padding">?ъ엯 ?띾룄</td>
+<td class="p-table-cell-padding text-right">-0.15</td>
+<td class="p-table-cell-padding text-right">0.45</td>
+<td class="p-table-cell-padding text-center text-secondary">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</main>
+
+
+<script src="/app.js"></script></body></html>
+
