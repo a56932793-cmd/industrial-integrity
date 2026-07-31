@@ -62,11 +62,6 @@
       location.replace(`/login.html?next=${encodeURIComponent(next)}`);
       return;
     }
-    const logout = document.createElement('button');
-    logout.textContent = `濡쒓렇?꾩썐 (${session.user.email})`;
-    logout.className = 'auth-logout';
-    logout.onclick = () => client.auth.signOut().then(() => location.replace('/login.html'));
-    document.body.appendChild(logout);
     client.auth.onAuthStateChange((_event, currentSession) => { if (!currentSession) location.replace('/login.html'); });
   } catch (error) {
     showMessage('Supabase SDK瑜?遺덈윭?ㅼ? 紐삵뻽?듬땲?? ?ㅽ듃?뚰겕 ?곌껐???뺤씤?섏꽭??');
