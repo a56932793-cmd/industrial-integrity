@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Industrial Integrity 濡쒓렇??/title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/supabase-config.js"></script>
+  <script src="/auth.js"></script>
+  <style>
+    body { margin:0; min-height:100vh; display:grid; place-items:center; background:#f9f9ff; color:#1a1c20; font-family:Arial,sans-serif; }
+    .card { width:min(420px, calc(100vw - 32px)); padding:32px; background:#fff; border:1px solid #c3c6d2; border-radius:8px; box-sizing:border-box; }
+    label { display:block; margin:16px 0 6px; font-size:13px; font-weight:600; }
+    input { width:100%; padding:12px; box-sizing:border-box; border:1px solid #c3c6d2; border-radius:4px; font-size:14px; }
+    input:focus { outline:2px solid #2f5ea3; border-color:#2f5ea3; }
+    .primary { width:100%; margin-top:20px; padding:12px; border:0; border-radius:4px; background:#002b5c; color:#fff; font-weight:700; cursor:pointer; }
+    .secondary { border:0; background:none; color:#002b5c; cursor:pointer; font-size:12px; }
+    .auth-message { margin-top:16px; padding:10px; border-radius:4px; font-size:13px; background:#ffdad6; color:#93000a; }
+    .auth-message.success { background:#d1fae5; color:#065f46; }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <p style="margin:0;color:#2f5ea3;font-size:12px;font-weight:700;letter-spacing:.08em">INDUSTRIAL INTEGRITY</p>
+    <h1 style="margin:8px 0 4px;font-size:24px">?덉쭏 遺꾩꽍 ?쒖뒪??濡쒓렇??/h1>
+    <p style="margin:0;color:#737782;font-size:13px">Supabase Auth濡??덉쟾?섍쾶 濡쒓렇?명븯?몄슂.</p>
+    <form id="login-form">
+      <label for="email">?대찓??/label><input id="email" type="email" autocomplete="email" required placeholder="name@company.com">
+      <label for="password">鍮꾨?踰덊샇</label><input id="password" type="password" autocomplete="current-password" required minlength="6" placeholder="6???댁긽">
+      <button class="primary" type="submit">濡쒓렇??/button>
+    </form>
+    <div style="display:flex;justify-content:space-between;margin-top:16px">
+      <button class="secondary" id="signup-button" type="button">?뚯썝媛??/button>
+      <button class="secondary" id="reset-button" type="button">鍮꾨?踰덊샇 ?ъ꽕??/button>
+    </div>
+    <div id="auth-message" hidden></div>
+  </main>
+</body>
+</html>
+
