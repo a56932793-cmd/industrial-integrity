@@ -1,0 +1,8 @@
+industrial_integrity.db
+__pycache__/
+server.log
+.vercel/
+.env
+.env.*
+!.env.example
+
