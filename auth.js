@@ -1,7 +1,7 @@
 (async () => {
   const config = window.SUPABASE_CONFIG || {};
   const isConfigured = Boolean(config.url && config.anonKey && config.anonKey.length > 30);
-  const loginPage = location.pathname.endsWith('/login.html');
+  const loginPage = location.pathname.endsWith('/login.html') || location.pathname.endsWith('/login');
 
   const loadScript = (src) => new Promise((resolve, reject) => {
     const script = document.createElement('script');
@@ -20,7 +20,7 @@
   try {
     await loadScript('https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js');
     if (!window.supabase || !isConfigured) {
-      showMessage('Supabase anon key媛 ?ㅼ젙?섏? ?딆븯?듬땲?? supabase-config.js???ㅼ젣 怨듦컻?ㅻ? ?낅젰?섏꽭??');
+      showMessage('Supabase anon key가 설정되지 않았습니다. supabase-config.js에 실제 공개키를 입력하세요.');
       return;
     }
     const client = window.supabase.createClient(config.url, config.anonKey);
@@ -41,17 +41,17 @@
       signup?.addEventListener('click', async () => {
         const email = document.getElementById('email').value.trim();
         const password = document.getElementById('password').value;
-        if (!email || password.length < 6) return showMessage('?대찓?쇨낵 6???댁긽 鍮꾨?踰덊샇瑜??낅젰?섏꽭??');
+        if (!email || password.length < 6) return showMessage('이메일과 6자 이상 비밀번호를 입력하세요.');
         const { error } = await client.auth.signUp({ email, password, options: { emailRedirectTo: `${location.origin}/login.html` } });
         if (error) return showMessage(error.message);
-        showMessage('媛???붿껌???꾨즺?섏뿀?듬땲?? ?대찓???몄쬆 ??濡쒓렇?명븯?몄슂.', 'success');
+        showMessage('가입 요청이 완료되었습니다. 이메일 인증 후 로그인하세요.', 'success');
       });
       reset?.addEventListener('click', async () => {
         const email = document.getElementById('email').value.trim();
-        if (!email) return showMessage('鍮꾨?踰덊샇 ?ъ꽕???대찓?쇱쓣 ?낅젰?섏꽭??');
+        if (!email) return showMessage('비밀번호 재설정 이메일을 입력하세요.');
         const { error } = await client.auth.resetPasswordForEmail(email, { redirectTo: `${location.origin}/login.html` });
         if (error) return showMessage(error.message);
-        showMessage('鍮꾨?踰덊샇 ?ъ꽕??硫붿씪??諛쒖넚?덉뒿?덈떎.', 'success');
+        showMessage('비밀번호 재설정 메일을 발송했습니다.', 'success');
       });
       return;
     }
@@ -64,7 +64,6 @@
     }
     client.auth.onAuthStateChange((_event, currentSession) => { if (!currentSession) location.replace('/login.html'); });
   } catch (error) {
-    showMessage('Supabase SDK瑜?遺덈윭?ㅼ? 紐삵뻽?듬땲?? ?ㅽ듃?뚰겕 ?곌껐???뺤씤?섏꽭??');
+    showMessage('Supabase SDK를 불러오지 못했습니다. 네트워크 연결을 확인하세요.');
   }
 })();
-
