@@ -1,0 +1,528 @@
+<!DOCTYPE html><html lang="ko"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>POSCO FUTURE M - 遺꾩꽍 蹂닿퀬??諛?8D 由ы룷??/title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-error-container": "#93000a",
+                      "outline": "#737782",
+                      "error": "#ba1a1a",
+                      "inverse-on-surface": "#f0f0f7",
+                      "status-critical": "#DC2626",
+                      "surface-container-low": "#f3f3fa",
+                      "background": "#f9f9ff",
+                      "on-secondary-fixed": "#141d23",
+                      "surface-container-highest": "#e2e2e8",
+                      "primary-fixed": "#d6e3ff",
+                      "secondary-fixed-dim": "#bfc8d0",
+                      "on-surface": "#1a1c20",
+                      "on-secondary": "#ffffff",
+                      "tertiary-fixed": "#ffdbcb",
+                      "inverse-surface": "#2e3035",
+                      "primary": "#002b5c",
+                      "secondary": "#575f67",
+                      "surface-container": "#ededf4",
+                      "surface-variant": "#e2e2e8",
+                      "success-green": "#10B981",
+                      "status-normal": "#007BFF",
+                      "on-primary": "#ffffff",
+                      "status-caution": "#F59E0B",
+                      "surface-dim": "#d9d9e0",
+                      "secondary-fixed": "#dbe4ed",
+                      "on-secondary-container": "#5b646b",
+                      "on-tertiary-fixed": "#341100",
+                      "on-primary-fixed-variant": "#0b468a",
+                      "on-surface-variant": "#434751",
+                      "on-primary-container": "#85affa",
+                      "primary-container": "#004185",
+                      "surface": "#f9f9ff",
+                      "outline-variant": "#c3c6d2",
+                      "error-container": "#ffdad6",
+                      "on-tertiary": "#ffffff",
+                      "tertiary": "#4f1d00",
+                      "primary-fixed-dim": "#aac7ff",
+                      "on-background": "#1a1c20",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#783103",
+                      "surface-bright": "#f9f9ff",
+                      "on-primary-fixed": "#001b3e",
+                      "surface-tint": "#2f5ea3",
+                      "tertiary-container": "#722d00",
+                      "inverse-primary": "#aac7ff",
+                      "on-tertiary-container": "#f99562",
+                      "surface-container-high": "#e8e8ee",
+                      "steel-silver": "#E9ECEF",
+                      "on-secondary-fixed-variant": "#3f484f",
+                      "on-error": "#ffffff",
+                      "tertiary-fixed-dim": "#ffb692",
+                      "secondary-container": "#d8e1ea"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin": "24px",
+                      "gutter": "16px",
+                      "base": "4px",
+                      "table-cell-padding": "8px 12px",
+                      "card-padding": "20px"
+              },
+              "fontFamily": {
+                      "data-mono": [
+                              "JetBrains Mono"
+                      ],
+                      "headline-md": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-sm": [
+                              "Hanken Grotesk"
+                      ],
+                      "headline-lg-mobile": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "label-bold": [
+                              "Hanken Grotesk"
+                      ],
+                      "display-lg": [
+                              "Hanken Grotesk"
+                      ],
+                      "body-md": [
+                              "Hanken Grotesk"
+                      ]
+              },
+              "fontSize": {
+                      "data-mono": [
+                              "13px",
+                              {
+                                      "lineHeight": "18px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-md": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-sm": [
+                              "20px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "label-bold": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "600"
+                              }
+                      ],
+                      "display-lg": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        body { background-color: #F8F9FA; color: #1a1c20; }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid #DEE2E6;
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+        .stepper-line::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: calc(50% + 20px);
+            right: calc(-50% + 20px);
+            height: 2px;
+            background-color: #E9ECEF;
+            z-index: 0;
+            transform: translateY(-50%);
+        }
+        .stepper-item:last-child .stepper-line::after { display: none; }
+        .stepper-active .stepper-line::after { background-color: #002b5c; }
+        
+        /* Checkbox styling */
+        .custom-checkbox {
+            appearance: none;
+            width: 16px;
+            height: 16px;
+            border: 1px solid #737782;
+            border-radius: 2px;
+            background-color: white;
+            cursor: pointer;
+            position: relative;
+        }
+        .custom-checkbox:checked {
+            background-color: #002b5c;
+            border-color: #002b5c;
+        }
+        .custom-checkbox:checked::after {
+            content: 'check';
+            font-family: 'Material Symbols Outlined';
+            font-size: 14px;
+            color: white;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+      </style>
+</head>
+<body class="font-body-md text-body-md antialiased h-screen overflow-hidden flex">
+<!-- JSON Component: SideNavBar -->
+<nav class="bg-surface dark:bg-on-background text-primary dark:text-primary-fixed font-label-bold text-label-bold font-body-md text-body-md fixed left-0 top-16 h-[calc(100vh-64px)] w-64 border-r border-outline-variant dark:border-outline flat no shadows flex flex-col py-gutter h-full z-40 hidden md:flex">
+<div class="px-margin mb-8">
+<h2 class="font-headline-sm text-headline-sm font-bold text-primary">?덉쭏 遺꾩꽍</h2>
+<p class="text-status-normal mt-1 flex items-center gap-1 font-body-md">
+<span class="material-symbols-outlined text-[16px]">check_circle</span> ?쒖뒪???쒖꽦
+            </p>
+</div>
+<ul class="flex-1 overflow-y-auto px-gutter space-y-2">
+<li class="">
+<a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-secondary-container transition-all cursor-pointer duration-200" href="/1/code.html">
+<span class="material-symbols-outlined">database</span>
+                    ?곗씠???좏깮
+                </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-secondary-container transition-all cursor-pointer duration-200" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+                    ??쒕낫??                </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant dark:text-outline-variant hover:bg-surface-container-high dark:hover:bg-secondary-container transition-all cursor-pointer duration-200" href="/3/code.html"><span class="material-symbols-outlined">analytics</span>
+                    ?먯씤 諛??곴? 遺꾩꽍</a>
+</li>
+
+<li class="">
+<a class="flex items-center gap-3 px-3 py-2 rounded bg-primary-container dark:bg-primary text-on-primary-container dark:text-on-primary border-r-4 border-primary dark:border-inverse-primary cursor-pointer duration-200" href="/4._8d/code.html">
+<span class="material-symbols-outlined">description</span>
+                    蹂닿퀬??                </a>
+</li>
+</ul>
+<div class="px-gutter mt-auto pt-4 border-t border-outline-variant">
+<button class="w-full bg-primary text-on-primary rounded font-label-bold py-2 px-4 hover:bg-primary-container hover:text-on-primary-container transition-colors shadow-sm active:translate-y-px">
+                ?곗씠???대낫?닿린
+            </button>
+<ul class="mt-4 space-y-2">
+<li class="">
+<a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">support_agent</span>
+                        吏??                    </a>
+</li>
+<li class="">
+<a class="flex items-center gap-3 px-3 py-2 rounded text-on-surface-variant hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined">person</span>
+                        怨꾩젙
+                    </a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<div class="flex-1 flex flex-col h-full ml-0 md:ml-64 bg-background">
+<!-- JSON Component: TopNavBar -->
+<header class="bg-surface-container-lowest dark:bg-inverse-surface text-primary dark:text-primary-fixed font-headline-sm text-headline-sm font-label-bold text-label-bold fixed top-0 w-full z-50 border-b border-outline-variant dark:border-outline flat no shadows flex justify-between items-center h-16 px-margin w-full">
+<div class="flex items-center gap-4">
+<span class="text-headline-sm font-headline-sm font-bold text-primary dark:text-primary-fixed-dim">POSCO FUTURE M</span>
+</div>
+<!-- Process Stepper -->
+<div class="hidden lg:flex items-center space-x-8 font-label-bold text-secondary">
+<div class="flex flex-col items-center relative stepper-item stepper-active">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] z-10 relative">1</div>
+<span class="mt-1 text-primary">?곗씠??/span>
+<div class="stepper-line"></div>
+</div>
+<div class="flex flex-col items-center relative stepper-item stepper-active">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] z-10 relative">2</div>
+<span class="mt-1 text-primary">??쒕낫??/span>
+<div class="stepper-line"></div>
+</div>
+<div class="flex flex-col items-center relative stepper-item stepper-active">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-[10px] z-10 relative">3</div>
+<span class="mt-1 text-primary">?먯씤 遺꾩꽍</span>
+<div class="stepper-line"></div>
+</div>
+<div class="flex flex-col items-center relative stepper-item">
+<div class="w-6 h-6 rounded-full border-2 border-primary text-primary bg-surface flex items-center justify-center text-[10px] z-10 relative">4</div>
+<span class="mt-1 text-primary font-bold">蹂닿퀬??/span>
+<div class="stepper-line"></div>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="relative hidden sm:block mr-4">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-outline">search</span>
+<input class="pl-10 pr-4 py-1.5 bg-surface-container border border-outline-variant rounded text-body-md focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-64" placeholder="蹂닿퀬??寃??.." type="text">
+</div>
+<button class="text-secondary hover:bg-surface-container-low p-2 rounded-full transition-colors cursor-pointer active:opacity-80 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">notifications</span>
+</button>
+<button class="text-secondary hover:bg-surface-container-low p-2 rounded-full transition-colors cursor-pointer active:opacity-80 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">settings</span>
+</button>
+<button class="text-secondary hover:bg-surface-container-low p-2 rounded-full transition-colors cursor-pointer active:opacity-80 flex items-center justify-center">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">help</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-surface-container-high border border-outline-variant overflow-hidden ml-2">
+<img alt="User profile" class="w-full h-full object-cover" data-alt="A professional corporate headshot of a data analyst, facing forward, neutral lighting, modern office background, soft focus, high quality, realistic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB0wtPQGK5pHi0yaiORjdHYoFHGGx0_9xdp-WgIWqQMv__JeX0TIrc9lIU9a4-nrOH0TjYYlUvoEjOCneQkmfNpBT7PsIEQDUWmd5DyYAW0JnD5U8IOvvknkT4vFu6TcMGDvBVOTsYRwrUnJ5-GOMpmM4SG2OFUxL18W3Fth014E1dCX-oOy0_Y3OIYGvce5eFUvgyE0NFk_KvhheCKGY33cplcFfJdZSKtBZrEEiZDC4QS5o4Z5Qz">
+</div>
+</div>
+</header>
+<!-- Canvas -->
+<main class="flex-1 overflow-y-auto pt-16 px-gutter lg:px-margin pb-margin">
+<div class="flex justify-between items-end mt-6 mb-4">
+<div>
+<h1 class="font-headline-md text-headline-md text-on-surface">遺꾩꽍 蹂닿퀬??(8D 由ы룷??</h1>
+<p class="text-on-surface-variant font-body-md mt-1">理쒖쥌 ?덉쭏 ?댁뒋 遺꾩꽍 諛??쒖젙 議곗튂 臾몄꽌??/p>
+</div>
+<div class="flex gap-2">
+<button class="px-4 py-2 border border-steel-silver rounded text-primary font-label-bold bg-white hover:bg-surface-container-low transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">save</span> ?꾩떆 ???                    </button>
+<button class="px-4 py-2 bg-primary text-on-primary rounded font-label-bold hover:bg-primary-container transition-colors shadow-sm flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">send</span> 寃곗옱 ?곸떊
+                    </button>
+</div>
+</div>
+<!-- Main Grid Layout -->
+<div class="flex flex-col xl:flex-row gap-gutter">
+<!-- Left/Center Canvas: 8D Report Document -->
+<div class="flex-1 xl:w-3/4 flex flex-col gap-gutter">
+<!-- Meta Data Card -->
+<div class="glass-card rounded p-card-padding">
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+<div>
+<span class="block text-secondary font-label-bold mb-1">蹂닿퀬??ID</span>
+<span class="font-data-mono text-on-surface">8D-2023-1104-A</span>
+</div>
+<div>
+<span class="block text-secondary font-label-bold mb-1">?묒꽦?쇱옄</span>
+<span class="font-data-mono text-on-surface">2023-11-04</span>
+</div>
+<div>
+<span class="block text-secondary font-label-bold mb-1">?대떦??/span>
+<span class="text-on-surface font-label-bold">源泥좎닔 梨낆엫 (?덉쭏愿由ы?)</span>
+</div>
+<div>
+<span class="block text-secondary font-label-bold mb-1">?곹깭</span>
+<span class="inline-flex items-center gap-1 bg-surface-container-high text-on-surface px-2 py-0.5 rounded font-label-bold">
+<span class="w-2 h-2 rounded-full bg-status-caution"></span> ?묒꽦以?                                </span>
+</div>
+</div>
+</div>
+<!-- 8D Preview Area -->
+<div class="glass-card rounded flex-1 min-h-[600px] flex flex-col">
+<div class="border-b border-outline-variant p-3 bg-surface-container-low flex justify-between items-center rounded-t">
+<span class="font-label-bold text-primary flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">preview</span>
+                                由ы룷??誘몃━蹂닿린
+                            </span>
+<div class="flex gap-1">
+<button class="p-1 hover:bg-surface-variant rounded text-secondary"><span class="material-symbols-outlined text-[18px]">zoom_out</span></button>
+<button class="p-1 hover:bg-surface-variant rounded text-secondary"><span class="material-symbols-outlined text-[18px]">zoom_in</span></button>
+</div>
+</div>
+<div class="p-margin flex-1 overflow-y-auto bg-white" style="box-shadow: inset 0 0 10px rgba(0,0,0,0.02);">
+<!-- Document Style Content -->
+<div class="max-w-3xl mx-auto border border-outline-variant p-8 shadow-sm">
+<div class="text-center mb-8 border-b-2 border-primary pb-4">
+<h2 class="font-headline-md text-headline-md font-bold text-primary mb-2">8D ?덉쭏 ?댁긽 蹂닿퀬??/h2>
+<p class="text-on-surface-variant font-body-md">POSCO FUTURE M Quality Assurance</p>
+</div>
+<div class="space-y-6">
+<!-- D1/D2 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-bold text-on-surface bg-surface-container-low py-1 px-2 mb-2 border-l-4 border-primary">D1. ? 援ъ꽦</h3>
+<ul class="list-disc list-inside text-body-md text-on-surface-variant space-y-1">
+<li class="">??? 源泥좎닔 梨낆엫 (?덉쭏?)</li>
+<li class="">??? ?댁쁺???좎엫 (?앹궛?), 諛뺣???湲곗궗 (?ㅻ퉬?)</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-bold text-on-surface bg-surface-container-low py-1 px-2 mb-2 border-l-4 border-primary">D2. 臾몄젣 ?뺤쓽</h3>
+<p class="text-body-md text-on-surface-variant">
+                                                A-Line ?뚯꽦濡?援ш컙 ?⑤룄 ?쒖뼱 ?댁긽?쇰줈 ?명븳 ?묎레???쒕㈃ 寃고븿 諛쒖깮. (諛쒖깮?? 2023-11-01, 遺덈웾瑜?3.2% 利앷?)
+                                            </p>
+</div>
+</div>
+<!-- D3/D4 -->
+<div>
+<h3 class="font-label-bold text-on-surface bg-surface-container-low py-1 px-2 mb-2 border-l-4 border-primary">D3. ?꾩떆 議곗튂</h3>
+<p class="text-body-md text-on-surface-variant mb-2">
+                                            ?대떦 濡쒗듃(Lot) 異쒗븯 ?뺤? 諛??꾩닔 寃???ㅼ떆. A-Line ?앹궛 ?띾룄 20% ?섑뼢 議곗젙?섏뿬 ?⑤룄 ?덉젙???좊룄.
+                                        </p>
+</div>
+<div>
+<h3 class="font-label-bold text-on-surface bg-surface-container-low py-1 px-2 mb-2 border-l-4 border-primary">D4. 洹쇰낯 ?먯씤 遺꾩꽍</h3>
+<div class="border border-outline-variant p-3 bg-background">
+<p class="text-body-md text-on-surface-variant font-bold mb-2 text-status-critical">
+<span class="material-symbols-outlined inline-block align-middle text-[16px] mr-1">warning</span>
+                                                洹쇰낯 ?먯씤 ?꾩텧:
+                                            </p>
+<p class="text-body-md text-on-surface-variant">
+                                                ?곗씠??遺꾩꽍 寃곌낵, Zone 3???⑤룄 ?쇱꽌(T-302) ?명썑?붾줈 ?명븳 痢≪젙 吏???꾩긽???뺤씤?? ?대줈 ?명빐 ?덊꽣 ?쒖뼱 PID 猷⑦봽媛 吏??諛섏쓳?섏뿬 ?ㅻ쾭?덊듃(Overshoot) 諛쒖깮.
+                                            </p>
+</div>
+</div>
+<!-- D5/D6 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<h3 class="font-label-bold text-on-surface bg-surface-container-low py-1 px-2 mb-2 border-l-4 border-primary">D5. ?곴뎄 ?쒖젙 議곗튂 怨꾪쉷</h3>
+<ul class="list-decimal list-inside text-body-md text-on-surface-variant space-y-1">
+<li class="">Zone 3 ?⑤룄 ?쇱꽌 援먯껜 (怨좊컲?묒꽦 紐⑤뜽)</li>
+<li class="">PID ?쒖뼱 ?뚮씪誘명꽣 ?쒕떇 (D媛?理쒖쟻??</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-bold text-on-surface bg-surface-container-low py-1 px-2 mb-2 border-l-4 border-primary">D6. ?쒖젙 議곗튂 寃利?/h3>
+<p class="text-body-md text-on-surface-variant">
+                                                ?쇱꽌 援먯껜 ??72?쒓컙 ?쒗뿕 媛??寃곌낵 ?⑤룄 ?몄감 짹1.5???대궡(?ㅽ럺: 짹2.0?? ?좎? ?뺤씤. ?쒕㈃ 遺덈웾 誘몃컻??
+                                            </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Sidebar: JSON Component NavigationDrawer conceptually adapted as an Export/Checklist panel -->
+<div class="xl:w-1/4 w-full flex flex-col gap-gutter">
+<!-- Export Options -->
+<div class="bg-surface-container-low dark:bg-inverse-surface border border-outline-variant dark:border-outline rounded p-card-padding">
+<div class="flex items-center gap-2 mb-4 border-b border-outline-variant pb-2">
+<span class="material-symbols-outlined text-primary text-[20px]">upload_file</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">蹂닿퀬???대낫?닿린</h3>
+</div>
+<div class="space-y-2">
+<button class="w-full flex items-center justify-between p-3 border border-outline-variant rounded hover:bg-surface-container-highest transition-colors group cursor-pointer bg-white">
+<div class="flex items-center gap-3 text-on-surface">
+<div class="w-8 h-8 rounded bg-error-container text-on-error-container flex items-center justify-center font-label-bold text-[10px]">PDF</div>
+<span class="font-label-bold">PDF ?뚯씪 ?뺤떇</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 border border-outline-variant rounded hover:bg-surface-container-highest transition-colors group cursor-pointer bg-white">
+<div class="flex items-center gap-3 text-on-surface">
+<div class="w-8 h-8 rounded bg-success-green text-white flex items-center justify-center font-label-bold text-[10px] bg-opacity-20 !text-success-green">XLSX</div>
+<span class="font-label-bold">Excel (?곗씠???ы븿)</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 border border-outline-variant rounded hover:bg-surface-container-highest transition-colors group cursor-pointer bg-white">
+<div class="flex items-center gap-3 text-on-surface">
+<div class="w-8 h-8 rounded bg-surface-container-highest text-secondary flex items-center justify-center font-label-bold text-[10px]">CSV</div>
+<span class="font-label-bold">CSV (濡쒖슦 ?곗씠??</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+</button>
+<button class="w-full flex items-center justify-between p-3 border border-outline-variant rounded hover:bg-surface-container-highest transition-colors group cursor-pointer bg-white">
+<div class="flex items-center gap-3 text-on-surface">
+<div class="w-8 h-8 rounded bg-primary-container text-on-primary-container flex items-center justify-center font-label-bold text-[10px]">HTML</div>
+<span class="font-label-bold">??臾몄꽌 ?뺤떇</span>
+</div>
+<span class="material-symbols-outlined text-outline group-hover:text-primary transition-colors">download</span>
+</button>
+</div>
+</div>
+<!-- D7/D8 Checklist -->
+<div class="bg-surface-container-low border border-outline-variant rounded p-card-padding flex-1">
+<div class="flex items-center gap-2 mb-4 border-b border-outline-variant pb-2">
+<span class="material-symbols-outlined text-primary text-[20px]">fact_check</span>
+<h3 class="font-headline-sm text-headline-sm text-primary font-bold">?щ컻 諛⑹? 諛?醫낃껐</h3>
+</div>
+<div class="space-y-4">
+<div>
+<h4 class="font-label-bold text-secondary mb-2">D7. ?щ컻 諛⑹?</h4>
+<label class="flex items-start gap-3 p-2 hover:bg-surface-variant rounded cursor-pointer transition-colors">
+<input checked="" class="custom-checkbox mt-0.5" type="checkbox">
+<span class="text-body-md text-on-surface">?ㅻ퉬 ?덈갑 ?뺣퉬 ?ㅼ?以??낅뜲?댄듃 (?쇱꽌 ?섎챸 二쇨린 諛섏쁺)</span>
+</label>
+<label class="flex items-start gap-3 p-2 hover:bg-surface-variant rounded cursor-pointer transition-colors">
+<input checked="" class="custom-checkbox mt-0.5" type="checkbox">
+<span class="text-body-md text-on-surface">?댁쟾 ?쒖? ?묒뾽 吏?쒖꽌(SOP) 媛쒖젙 ?꾨즺</span>
+</label>
+<label class="flex items-start gap-3 p-2 hover:bg-surface-variant rounded cursor-pointer transition-colors">
+<input class="custom-checkbox mt-0.5" type="checkbox">
+<span class="text-body-md text-on-surface">?좎궗 ?ㅻ퉬(B-Line, C-Line) ?섑룊 ?꾧컻 ?꾨즺</span>
+</label>
+</div>
+<div class="border-t border-outline-variant pt-4">
+<h4 class="font-label-bold text-secondary mb-2">D8. ? 異뺥븯 諛?醫낃껐</h4>
+<label class="flex items-start gap-3 p-2 hover:bg-surface-variant rounded cursor-pointer transition-colors">
+<input class="custom-checkbox mt-0.5" type="checkbox">
+<span class="text-body-md text-on-surface">媛쒖꽑 寃곌낵 蹂닿퀬???먮즺 ?묒꽦</span>
+</label>
+<label class="flex items-start gap-3 p-2 hover:bg-surface-variant rounded cursor-pointer transition-colors">
+<input class="custom-checkbox mt-0.5" type="checkbox">
+<span class="text-body-md text-on-surface">?덉쭏 ?댁뒋 怨듭떇 醫낃껐 ?뱀씤</span>
+</label>
+</div>
+</div>
+<div class="mt-6 bg-tertiary-fixed text-on-tertiary-fixed p-3 rounded text-center">
+<span class="font-label-bold block mb-1">?꾨즺??/span>
+<span class="font-headline-md font-bold">60%</span>
+<div class="w-full bg-white h-2 rounded-full mt-2 overflow-hidden">
+<div class="bg-tertiary h-full rounded-full" style="width: 60%;"></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+
+<script src="/app.js"></script></body></html>
+
