@@ -1,0 +1,43 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE IF NOT EXISTS lots (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  lot_id TEXT NOT NULL UNIQUE,
+  product TEXT NOT NULL,
+  line TEXT NOT NULL,
+  process TEXT NOT NULL,
+  inspected_at TEXT NOT NULL,
+  total_count INTEGER NOT NULL,
+  defect_count INTEGER NOT NULL,
+  status TEXT NOT NULL CHECK(status IN ('?뺤긽','二쇱쓽','?ш컖')),
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS measurements (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  lot_id INTEGER NOT NULL REFERENCES lots(id) ON DELETE CASCADE,
+  measured_at TEXT NOT NULL,
+  temperature REAL,
+  gas_flow REAL,
+  pressure REAL,
+  defect_type TEXT
+);
+
+CREATE TABLE IF NOT EXISTS analyses (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  lot_id INTEGER NOT NULL REFERENCES lots(id) ON DELETE CASCADE,
+  analysis_type TEXT NOT NULL,
+  result_json TEXT NOT NULL,
+  created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS reports (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  report_no TEXT NOT NULL UNIQUE,
+  lot_id INTEGER REFERENCES lots(id),
+  title TEXT NOT NULL,
+  status TEXT NOT NULL DEFAULT '珥덉븞',
+  content_json TEXT NOT NULL DEFAULT '{}',
+  updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);
+
