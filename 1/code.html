@@ -1,0 +1,536 @@
+<!DOCTYPE html><html class="light" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>?ъ뒪肄뷀벂泥섏뿞 ?덉쭏 ?몄궗?댄듃 - ?곗씠???좏깮</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "inverse-surface": "#2e3035",
+                        "primary-fixed": "#d6e3ff",
+                        "on-error-container": "#93000a",
+                        "status-normal": "#007BFF",
+                        "on-primary": "#ffffff",
+                        "on-background": "#1a1c20",
+                        "surface": "#f9f9ff",
+                        "surface-dim": "#d9d9e0",
+                        "success-green": "#10B981",
+                        "primary": "#002b5c",
+                        "status-critical": "#DC2626",
+                        "on-tertiary-container": "#f99562",
+                        "secondary": "#575f67",
+                        "on-tertiary-fixed-variant": "#783103",
+                        "error": "#ba1a1a",
+                        "surface-bright": "#f9f9ff",
+                        "on-surface": "#1a1c20",
+                        "on-surface-variant": "#434751",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#ededf4",
+                        "primary-container": "#004185",
+                        "status-caution": "#F59E0B",
+                        "outline-variant": "#c3c6d2",
+                        "tertiary": "#4f1d00",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#e2e2e8",
+                        "outline": "#737782",
+                        "tertiary-container": "#722d00",
+                        "on-primary-fixed-variant": "#0b468a",
+                        "tertiary-fixed-dim": "#ffb692",
+                        "surface-variant": "#e2e2e8",
+                        "background": "#f9f9ff",
+                        "steel-silver": "#E9ECEF",
+                        "on-primary-container": "#85affa",
+                        "surface-container-low": "#f3f3fa",
+                        "secondary-fixed": "#dbe4ed",
+                        "on-secondary-container": "#5b646b",
+                        "secondary-fixed-dim": "#bfc8d0",
+                        "on-secondary-fixed-variant": "#3f484f",
+                        "inverse-on-surface": "#f0f0f7",
+                        "primary-fixed-dim": "#aac7ff",
+                        "surface-container-high": "#e8e8ee",
+                        "on-primary-fixed": "#001b3e",
+                        "inverse-primary": "#aac7ff",
+                        "surface-tint": "#2f5ea3",
+                        "secondary-container": "#d8e1ea",
+                        "error-container": "#ffdad6",
+                        "on-error": "#ffffff",
+                        "on-secondary-fixed": "#141d23",
+                        "tertiary-fixed": "#ffdbcb",
+                        "surface-container-lowest": "#ffffff",
+                        "on-tertiary-fixed": "#341100"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "card-padding": "20px",
+                        "margin": "24px",
+                        "table-cell-padding": "8px 12px",
+                        "base": "4px",
+                        "gutter": "16px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Hanken Grotesk"],
+                        "label-bold": ["Hanken Grotesk"],
+                        "headline-sm": ["Hanken Grotesk"],
+                        "headline-lg-mobile": ["Hanken Grotesk"],
+                        "body-md": ["Hanken Grotesk"],
+                        "body-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "data-mono": ["JetBrains Mono"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-bold": ["12px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-lg": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "data-mono": ["13px", { "lineHeight": "18px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined.fill {
+            font-variation-settings: 'FILL' 1;
+        }
+        
+        /* Custom scrollbar for tables */
+        ::-webkit-scrollbar {
+            width: 8px;
+            height: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f3f3fa; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #c3c6d2; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #737782; 
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col md:flex-row overflow-hidden">
+<!-- SideNavBar (Desktop) -->
+<nav class="hidden md:flex flex-col h-screen w-64 bg-surface-container-low dark:bg-inverse-surface border-r border-outline-variant dark:border-outline py-4 flex-shrink-0">
+<div class="px-margin mb-8 flex items-center space-x-3">
+<span class="material-symbols-outlined text-primary text-3xl" data-weight="fill">analytics</span>
+<div>
+<h1 class="font-headline-sm text-headline-sm text-primary leading-tight">?ъ뒪肄뷀벂泥섏뿞</h1>
+<p class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider">?덉쭏 ?몄궗?댄듃</p>
+</div>
+</div>
+<div class="flex-1 overflow-y-auto px-4">
+<p class="font-label-bold text-label-bold text-on-surface-variant mb-4 px-2 uppercase tracking-wider">遺꾩꽍 ?뚯씠?꾨씪??/p>
+<ul class="space-y-1">
+<li class="">
+<a class="flex items-center space-x-3 px-3 py-2 rounded-lg bg-secondary-container dark:bg-primary-container text-primary dark:text-on-primary-container font-semibold transition-all duration-150 ease-in-out" href="/1/code.html">
+<span class="material-symbols-outlined" data-icon="database">database</span>
+<span class="">?곗씠???좏깮</span>
+</a>
+</li>
+<li class="">
+<a class="flex items-center space-x-3 px-3 py-2 rounded-lg text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-secondary transition-all duration-150 ease-in-out" href="/2/code.html">
+<span class="material-symbols-outlined" data-icon="dashboard">dashboard</span>
+<span class="">??쒕낫??/span>
+</a>
+</li>
+<li class="">
+<a class="flex items-center space-x-3 px-3 py-2 rounded-lg text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-secondary transition-all duration-150 ease-in-out" href="/3/code.html"><span class="material-symbols-outlined" data-icon="query_stats">query_stats</span>
+<span class="">?먯씤 諛??곴? 遺꾩꽍</span></a>
+</li>
+
+<li class="">
+<a class="flex items-center space-x-3 px-3 py-2 rounded-lg text-on-surface-variant dark:text-surface-variant hover:bg-surface-container-highest dark:hover:bg-secondary transition-all duration-150 ease-in-out" href="/4._8d/code.html">
+<span class="material-symbols-outlined" data-icon="description">description</span>
+<span class="">蹂닿퀬??/span>
+</a>
+</li>
+</ul>
+</div>
+<div class="px-4 mt-auto">
+<button class="w-full bg-primary text-on-primary font-label-bold text-label-bold py-3 rounded uppercase tracking-wider mb-4 hover:bg-primary-container transition-colors shadow-sm">
+                蹂닿퀬???앹꽦
+            </button>
+<ul class="space-y-1 border-t border-outline-variant pt-4">
+<li class="">
+<a class="flex items-center space-x-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="settings">settings</span>
+<span class="">?ㅼ젙</span>
+</a>
+</li>
+<li class="">
+<a class="flex items-center space-x-3 px-3 py-2 rounded-lg text-on-surface-variant hover:bg-surface-container-highest transition-all duration-150" href="#">
+<span class="material-symbols-outlined" data-icon="contact_support">contact_support</span>
+<span class="">怨좉컼吏??/span>
+</a>
+</li>
+</ul>
+</div>
+</nav>
+<!-- Main Content Area -->
+<main class="flex-1 flex flex-col h-screen overflow-hidden bg-background">
+<!-- TopAppBar (Desktop/Mobile hybrid) -->
+<header class="flex justify-between items-center w-full px-margin h-16 bg-surface dark:bg-inverse-surface border-b border-outline-variant dark:border-outline flex-shrink-0">
+<div class="flex items-center md:hidden">
+<button class="text-primary mr-4 p-2 rounded-md hover:bg-surface-container">
+<span class="material-symbols-outlined">menu</span>
+</button>
+<h1 class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed">?ъ뒪肄뷀벂泥섏뿞</h1>
+</div>
+<div class="hidden md:flex items-center space-x-4 ml-auto">
+<div class="text-on-surface-variant font-label-bold text-label-bold flex items-center space-x-2 bg-surface-container-low px-3 py-1 rounded-full border border-outline-variant">
+<div class="w-2 h-2 rounded-full bg-success-green"></div>
+<span class="">?곹깭: ?⑤씪??/span>
+</div>
+<button class="text-primary p-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="notifications">notifications</span>
+</button>
+<button class="text-primary p-2 rounded-full hover:bg-surface-container transition-colors">
+<span class="material-symbols-outlined" data-icon="help_outline">help_outline</span>
+</button>
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center text-primary font-bold overflow-hidden border border-outline-variant cursor-pointer ml-2">
+<span class="material-symbols-outlined">person</span>
+</div>
+</div>
+</header>
+<!-- Page Canvas with Right Sidebar Structure -->
+<div class="flex-1 flex overflow-hidden">
+<!-- Left Main Content -->
+<div class="flex-1 overflow-y-auto p-margin flex flex-col space-y-gutter">
+<!-- Workflow Stepper -->
+<div class="bg-surface border border-outline-variant rounded-lg p-4 flex items-center justify-between shadow-sm">
+<div class="flex items-center space-x-2 text-primary font-label-bold text-label-bold">
+<div class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center">1</div>
+<span class="uppercase tracking-wider">?곗씠???좏깮</span>
+</div>
+<div class="flex-1 h-px bg-outline-variant mx-4"></div>
+<div class="flex items-center space-x-2 text-on-surface-variant font-label-bold text-label-bold">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center border border-outline-variant">2</div>
+<span class="uppercase tracking-wider hidden sm:inline">??쒕낫??/span>
+</div>
+<div class="flex-1 h-px bg-outline-variant mx-4"></div>
+<div class="flex items-center space-x-2 text-on-surface-variant font-label-bold text-label-bold">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center border border-outline-variant">3</div>
+<span class="uppercase tracking-wider hidden sm:inline">?먯씤 遺꾩꽍</span>
+</div>
+<div class="flex-1 h-px bg-outline-variant mx-4"></div>
+<div class="flex items-center space-x-2 text-on-surface-variant font-label-bold text-label-bold">
+<div class="w-6 h-6 rounded-full bg-surface-container-highest flex items-center justify-center border border-outline-variant">4</div>
+<span class="uppercase tracking-wider hidden sm:inline">蹂닿퀬??/span>
+</div>
+</div>
+<!-- Header & Actions -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface">?곗씠???섏쭛 諛??좏깮</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">?앹궛 ?곗씠?곗뀑???낅줈?쒗븯嫄곕굹 洹쇰낯 ?먯씤 遺꾩꽍???꾪빐 湲곗〈 濡쒗듃瑜??좏깮?섏꽭??</p>
+</div>
+<div class="flex items-center space-x-3 self-start sm:self-auto">
+<button class="bg-surface border border-outline-variant text-on-surface-variant font-label-bold text-label-bold px-4 py-2.5 rounded shadow-sm hover:bg-surface-container-highest transition-colors uppercase tracking-wider flex items-center space-x-2" onclick="document.getElementById('right-sidebar').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-sm">filter_list</span>
+<span class="">?곗씠??諛??꾪꽣</span>
+</button>
+<button class="bg-primary text-on-primary font-label-bold text-label-bold px-6 py-2.5 rounded shadow-sm hover:bg-primary-container transition-colors uppercase tracking-wider flex items-center space-x-2 whitespace-nowrap disabled:opacity-50 disabled:cursor-not-allowed">
+<span class="material-symbols-outlined text-sm">play_arrow</span>
+<span class="">?좏깮??濡쒗듃 遺꾩꽍</span>
+</button>
+</div>
+</div>
+<!-- Main Column (KPIs & Data Table) -->
+<div class="flex flex-col space-y-gutter flex-1">
+<!-- KPI Cards (4 Column Grid) -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-gutter">
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col relative overflow-hidden">
+<div class="absolute right-0 top-0 w-16 h-16 bg-primary-fixed-dim opacity-20 rounded-bl-full pointer-events-none"></div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider mb-2">?꾩껜 濡쒗듃 ??/span>
+<div class="flex items-end justify-between mt-auto">
+<span class="font-display-lg text-display-lg text-primary">1,248</span>
+<div class="flex items-center text-success-green bg-success-green/10 px-1.5 py-0.5 rounded text-xs font-bold mb-1">
+<span class="material-symbols-outlined text-sm">trending_up</span>
+<span class="ml-1">12%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col relative overflow-hidden">
+<div class="absolute right-0 top-0 w-16 h-16 bg-primary-fixed-dim opacity-20 rounded-bl-full pointer-events-none"></div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider mb-2">珥??앹궛??/span>
+<div class="flex items-end justify-between mt-auto">
+<span class="font-display-lg text-display-lg text-primary">8.4<span class="text-xl ml-1 text-on-surface-variant">kt</span></span>
+</div>
+</div>
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col relative overflow-hidden">
+<div class="absolute right-0 top-0 w-16 h-16 bg-error-container opacity-50 rounded-bl-full pointer-events-none"></div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider mb-2">珥?遺덈웾 ??/span>
+<div class="flex items-end justify-between mt-auto">
+<span class="font-display-lg text-display-lg text-status-critical">312</span>
+<div class="flex items-center text-status-critical bg-error-container px-1.5 py-0.5 rounded text-xs font-bold mb-1">
+<span class="material-symbols-outlined text-sm">trending_down</span>
+<span class="ml-1">4%</span>
+</div>
+</div>
+</div>
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col relative overflow-hidden">
+<div class="absolute right-0 top-0 w-16 h-16 bg-status-caution opacity-20 rounded-bl-full pointer-events-none"></div>
+<span class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider mb-2">?됯퇏 遺덈웾瑜?/span>
+<div class="flex items-end justify-between mt-auto">
+<span class="font-display-lg text-display-lg text-on-surface">3.7%</span>
+<div class="w-2 h-2 rounded-full bg-status-caution mb-2"></div>
+</div>
+</div>
+</div>
+<!-- Data Preview Table -->
+<div class="bg-surface border border-outline-variant rounded-lg flex-1 flex flex-col overflow-hidden min-h-[400px]">
+<div class="p-card-padding border-b border-outline-variant flex justify-between items-center bg-[#F1F3F5]">
+<h3 class="font-label-bold text-label-bold text-on-surface uppercase tracking-wider">?ъ슜 媛?ν븳 ?곗씠?곗뀑</h3>
+<div class="flex items-center space-x-2">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-2 top-1/2 -translate-y-1/2 text-outline text-sm">search</span>
+<input class="pl-8 pr-3 py-1 bg-surface border border-outline-variant rounded text-sm w-48 focus:border-primary focus:ring-1 focus:ring-primary outline-none" placeholder="濡쒗듃 ID 寃??.." type="text">
+</div>
+</div>
+</div>
+<div class="flex-1 overflow-auto">
+<table class="w-full text-left border-collapse whitespace-nowrap">
+<thead class="sticky top-0 bg-[#F1F3F5] shadow-sm z-10">
+<tr>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant w-12 text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant">LOT ID</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant">?좎쭨</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant">?앹궛 ?쇱씤</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant">?묒뾽議?/th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant">?쒗뭹</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant text-right">珥??앹궛??/th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant">二쇱슂 遺덈웾</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant text-right">遺덈웾 ?섎웾</th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant text-right">遺덈웾瑜?/th>
+<th class="p-table-cell-padding font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider border-b border-outline-variant text-center">?곹깭</th>
+</tr>
+</thead>
+<tbody class="font-data-mono text-data-mono text-on-surface divide-y divide-outline-variant">
+<!-- Selected Row -->
+<tr class="hover:bg-surface-container-low transition-colors bg-secondary-container/30">
+<td class="p-table-cell-padding text-center">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</td>
+<td class="p-table-cell-padding font-medium text-primary">LOT-2310-A45</td>
+<td class="p-table-cell-padding text-on-surface-variant">2023-10-15</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">Line A</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">二쇨컙議?/td>
+<td class="p-table-cell-padding font-body-md">NCMA Cathode</td>
+<td class="p-table-cell-padding text-right">2,788 kg</td>
+<td class="p-table-cell-padding font-body-md">?낆옄 ?ш린 (D50)</td>
+<td class="p-table-cell-padding text-right text-status-critical">145 kg</td>
+<td class="p-table-cell-padding text-right">5.2%</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center space-x-1 bg-error-container text-status-critical px-2 py-0.5 rounded-full font-label-bold text-[10px] uppercase tracking-wide">
+<div class="w-1.5 h-1.5 rounded-full bg-status-critical"></div>
+<span class="">?ш컖</span>
+</span>
+</td>
+</tr>
+<!-- Normal Rows -->
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-table-cell-padding text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</td>
+<td class="p-table-cell-padding font-medium">LOT-2310-A46</td>
+<td class="p-table-cell-padding text-on-surface-variant">2023-10-15</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">Line A</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">?쇨컙議?/td>
+<td class="p-table-cell-padding font-body-md">NCMA Cathode</td>
+<td class="p-table-cell-padding text-right">2,800 kg</td>
+<td class="p-table-cell-padding font-body-md">?섎텇 ?⑤웾</td>
+<td class="p-table-cell-padding text-right text-status-caution">42 kg</td>
+<td class="p-table-cell-padding text-right">1.5%</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center space-x-1 bg-surface-container-highest text-status-caution px-2 py-0.5 rounded-full font-label-bold text-[10px] uppercase tracking-wide">
+<div class="w-1.5 h-1.5 rounded-full bg-status-caution"></div>
+<span class="">二쇱쓽</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-table-cell-padding text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</td>
+<td class="p-table-cell-padding font-medium">LOT-2310-B12</td>
+<td class="p-table-cell-padding text-on-surface-variant">2023-10-14</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">Line B</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">二쇨컙議?/td>
+<td class="p-table-cell-padding font-body-md">Natural Graphite</td>
+<td class="p-table-cell-padding text-right">3,000 kg</td>
+<td class="p-table-cell-padding font-body-md">?먯꽦 ?대Ъ</td>
+<td class="p-table-cell-padding text-right">12 kg</td>
+<td class="p-table-cell-padding text-right">0.4%</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center space-x-1 bg-surface-container-highest text-success-green px-2 py-0.5 rounded-full font-label-bold text-[10px] uppercase tracking-wide">
+<div class="w-1.5 h-1.5 rounded-full bg-success-green"></div>
+<span class="">?뺤긽</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-table-cell-padding text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</td>
+<td class="p-table-cell-padding font-medium">LOT-2310-B13</td>
+<td class="p-table-cell-padding text-on-surface-variant">2023-10-14</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">Line B</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">?쇨컙議?/td>
+<td class="p-table-cell-padding font-body-md">Artificial Graphite</td>
+<td class="p-table-cell-padding text-right">3,000 kg</td>
+<td class="p-table-cell-padding font-body-md">鍮꾪몴硫댁쟻</td>
+<td class="p-table-cell-padding text-right">18 kg</td>
+<td class="p-table-cell-padding text-right">0.6%</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center space-x-1 bg-surface-container-highest text-success-green px-2 py-0.5 rounded-full font-label-bold text-[10px] uppercase tracking-wide">
+<div class="w-1.5 h-1.5 rounded-full bg-success-green"></div>
+<span class="">?뺤긽</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-table-cell-padding text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</td>
+<td class="p-table-cell-padding font-medium">LOT-2310-A47</td>
+<td class="p-table-cell-padding text-on-surface-variant">2023-10-16</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">Line A</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">二쇨컙議?/td>
+<td class="p-table-cell-padding font-body-md">NCMA Cathode</td>
+<td class="p-table-cell-padding text-right">2,957 kg</td>
+<td class="p-table-cell-padding font-body-md">?낆옄 ?ш린 (D50)</td>
+<td class="p-table-cell-padding text-right text-status-critical">210 kg</td>
+<td class="p-table-cell-padding text-right">7.1%</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center space-x-1 bg-error-container text-status-critical px-2 py-0.5 rounded-full font-label-bold text-[10px] uppercase tracking-wide">
+<div class="w-1.5 h-1.5 rounded-full bg-status-critical"></div>
+<span class="">?ш컖</span>
+</span>
+</td>
+</tr>
+<tr class="hover:bg-surface-container-low transition-colors">
+<td class="p-table-cell-padding text-center">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+</td>
+<td class="p-table-cell-padding font-medium">LOT-2310-A48</td>
+<td class="p-table-cell-padding text-on-surface-variant">2023-10-16</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">Line A</td>
+<td class="p-table-cell-padding font-body-md text-on-surface-variant">?쇨컙議?/td>
+<td class="p-table-cell-padding font-body-md">NCMA Cathode</td>
+<td class="p-table-cell-padding text-right">5,000 kg</td>
+<td class="p-table-cell-padding font-body-md">?놁쓬</td>
+<td class="p-table-cell-padding text-right">5 kg</td>
+<td class="p-table-cell-padding text-right">0.1%</td>
+<td class="p-table-cell-padding text-center">
+<span class="inline-flex items-center space-x-1 bg-surface-container-highest text-success-green px-2 py-0.5 rounded-full font-label-bold text-[10px] uppercase tracking-wide">
+<div class="w-1.5 h-1.5 rounded-full bg-success-green"></div>
+<span class="">?뺤긽</span>
+</span>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="p-3 border-t border-outline-variant bg-surface flex justify-between items-center">
+<span class="font-body-md text-sm text-on-surface-variant">1,248媛?濡쒗듃 以?1 ~ 6 ??ぉ ?쒖떆</span>
+<div class="flex space-x-1">
+<button class="px-2 py-1 border border-outline-variant rounded bg-surface hover:bg-surface-container-highest disabled:opacity-50"><span class="material-symbols-outlined text-sm">chevron_left</span></button>
+<button class="px-2 py-1 border border-outline-variant rounded bg-surface hover:bg-surface-container-highest disabled:opacity-50"><span class="material-symbols-outlined text-sm">chevron_right</span></button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Collapsible Right Sidebar (Filters & Upload) -->
+<div class="w-80 border-l border-outline-variant bg-surface flex flex-col flex-shrink-0 transition-all duration-300 hidden lg:flex" id="right-sidebar">
+<div class="p-4 border-b border-outline-variant flex justify-between items-center">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">?곗씠??諛??꾪꽣</h2>
+<button class="text-on-surface-variant hover:text-primary p-1 rounded-full hover:bg-surface-container transition-colors" onclick="document.getElementById('right-sidebar').classList.add('hidden')">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-4 flex-1 overflow-y-auto flex flex-col space-y-gutter">
+<!-- Upload Dropzone -->
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding flex flex-col items-center justify-center text-center h-48 border-dashed hover:border-primary hover:bg-surface-container-low transition-colors cursor-pointer group">
+<div class="w-12 h-12 rounded-full bg-secondary-container text-primary flex items-center justify-center mb-3 group-hover:scale-110 transition-transform">
+<span class="material-symbols-outlined text-2xl">upload_file</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">?곗씠?곗뀑 ?낅줈??/h3>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm mb-4">?ш린??CSV ?뚯씪???쒕옒洹????쒕∼ ?섏꽭??</p>
+<span class="font-label-bold text-label-bold text-primary uppercase tracking-wider border border-primary px-4 py-1.5 rounded hover:bg-primary-container hover:text-on-primary-container transition-colors">?뚯씪 ?좏깮</span>
+</div>
+<!-- Filters Panel -->
+<div class="bg-surface border border-outline-variant rounded-lg p-card-padding flex-1 flex flex-col">
+<h3 class="font-label-bold text-label-bold text-on-surface-variant uppercase tracking-wider mb-4 pb-2 border-b border-outline-variant">?꾪꽣 湲곗?</h3>
+<div class="space-y-4 flex-1">
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-1.5">?쒗뭹 移댄뀒怨좊━</label>
+<select class="w-full bg-surface border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none">
+<option>?꾩껜 ?쒗뭹</option>
+<option>?묎레 ?쒕Ъ吏?/option>
+<option>?뚭레 ?쒕Ъ吏?/option>
+</select>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-1.5">湲곌컙 ?ㅼ젙</label>
+<div class="flex flex-col gap-2">
+<input class="w-full bg-surface border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="date">
+<input class="w-full bg-surface border border-outline-variant rounded px-3 py-2 font-body-md text-body-md text-on-surface focus:border-primary focus:ring-1 focus:ring-primary outline-none" type="date">
+</div>
+</div>
+<div>
+<label class="block font-label-bold text-label-bold text-on-surface mb-1.5">遺덈웾 ?좏삎</label>
+<div class="space-y-2 max-h-48 overflow-y-auto pr-2">
+<label class="flex items-center space-x-2">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">?낆옄 ?ш린 (D50)</span>
+</label>
+<label class="flex items-center space-x-2">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">?섎텇 ?⑤웾</span>
+</label>
+<label class="flex items-center space-x-2">
+<input checked="" class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">?먯꽦 ?대Ъ</span>
+</label>
+<label class="flex items-center space-x-2">
+<input class="rounded border-outline-variant text-primary focus:ring-primary" type="checkbox">
+<span class="font-body-md text-body-md text-on-surface">鍮꾪몴硫댁쟻 (BET)</span>
+</label>
+</div>
+</div>
+</div>
+<div class="mt-4 pt-4 border-t border-outline-variant flex justify-between items-center">
+<button class="text-on-surface-variant font-label-bold text-label-bold uppercase tracking-wider hover:text-primary transition-colors">珥덇린??/button>
+<button class="bg-surface-container-highest text-on-surface font-label-bold text-label-bold px-4 py-1.5 rounded uppercase tracking-wider hover:bg-secondary-container transition-colors border border-outline-variant">?꾪꽣 ?곸슜</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+
+
+<script src="/app.js"></script></body></html>
+
